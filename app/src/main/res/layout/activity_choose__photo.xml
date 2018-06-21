@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.ai_chat.Choose_Photo">
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recy_choose_photo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"></android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/biao_ti_"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="所有照片"
+        android:textSize="24dp"
+        android:textColor="#fff"
+        android:background="#000"
+        android:alpha="0.5"
+
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:text="取消"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:onClick="cancle"
+        android:background="#000"
+        android:textColor="#fff"
+        android:alpha="0.8"
+        app:layout_constraintRight_toLeftOf="@+id/textView2"
+        android:id="@+id/textView3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:text="确定"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:onClick="click_true"
+        android:background="#000"
+        android:textColor="#333"
+        android:alpha="0.8"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textView2"
+        android:id="@+id/textView4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:text=""
+        android:textSize="25dp"
+        android:background="#000"
+        android:textColor="#fff"
+        android:alpha="0.8"
+        android:id="@+id/textView2"
+        app:layout_constraintRight_toLeftOf="@+id/textView4"
+        app:layout_constraintLeft_toRightOf="@+id/textView3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="0dp" />
+
+
+
+</android.support.constraint.ConstraintLayout>

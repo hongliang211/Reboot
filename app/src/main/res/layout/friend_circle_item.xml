@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:id="@+id/img_head"
+        android:layout_marginStart="8dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="陶建辉"
+        android:textColor="#8baa00"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/img_head"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:id="@+id/text_name"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/text_main"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:text="addasdsadasdasdasdadadadadaddsdfsfsdffsdfsdfsdfsdfsdf"
+        app:layout_constraintLeft_toRightOf="@+id/img_head"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_name"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp" />
+
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@+id/img_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_main" />
+
+    <ImageView
+        android:id="@+id/img_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@+id/img_3"
+        app:layout_constraintLeft_toRightOf="@+id/img_1"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_main" />
+
+    <ImageView
+        android:id="@+id/img_3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/img_2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_main" />
+
+    <ImageView
+        android:id="@+id/img_4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@+id/img_5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/img_1" />
+
+    <ImageView
+        android:id="@+id/img_5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@+id/img_6"
+        app:layout_constraintLeft_toRightOf="@+id/img_4"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/img_2" />
+
+    <ImageView
+        android:id="@+id/img_6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/img_5"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/img_3" />
+
+    <ImageView
+        android:id="@+id/img_7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@+id/img_8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/img_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/img_8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@+id/img_9"
+        app:layout_constraintLeft_toRightOf="@+id/img_7"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/img_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/img_9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/img_8"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/img_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
+
+
+    <include
+        android:id="@+id/ping_lun_tan_chu"
+        layout="@layout/ping_lun_tan_chu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/img_9" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:scaleType="fitXY"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_9"
+        app:srcCompat="@drawable/ping_lun_zuo_yi" />
+
+</android.support.constraint.ConstraintLayout>
